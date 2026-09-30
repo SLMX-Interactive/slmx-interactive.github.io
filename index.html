@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SLMX Interactive | Denkspiele für Android</title>
+<meta name="description" content="SLMX Interactive entwickelt kleine Denkspiele für Android: offline spielbar, ohne Zeitdruck und ohne Konto. Aktuell: REFRAKT, ein Lichtpuzzle.">
+<meta name="theme-color" content="#0b0d12" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f3f4f6" media="(prefers-color-scheme: light)">
+<link rel="canonical" href="https://slmx-interactive.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="SLMX Interactive">
+<meta property="og:description" content="Ruhige Denkspiele für Android. Aktuell: REFRAKT, ein Lichtpuzzle.">
+<meta property="og:image" content="https://slmx-interactive.github.io/assets/img/refrakt-prisma.webp">
+<link rel="icon" href="assets/img/refrakt-icon-180.png">
+<link rel="preload" href="assets/fonts/geist-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="SLMX Interactive, Startseite">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2.5 27.7 9.25v13.5L16 29.5 4.3 22.75V9.25Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M1 16h15l9-5.5" fill="none" stroke="var(--accent)" stroke-width="2.4" stroke-linecap="round"/></svg>
+      SLMX Interactive
+    </a>
+    <nav aria-label="Hauptnavigation">
+      <ul>
+        <li><a href="#spiele">Spiele</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow enter" style="--n:0">Indie-Spielestudio</p>
+        <h1 class="enter" style="--n:1">Ruhige Denkspiele für zwischendurch.</h1>
+        <p class="lead enter" style="--n:2">SLMX Interactive entwickelt kleine Spiele für Android: offline spielbar, ohne Zeitdruck und ohne Konto.</p>
+        <a class="btn btn-primary enter" style="--n:3" href="#spiele">REFRAKT ansehen <span class="ico ico-down" aria-hidden="true"></span></a>
+      </div>
+      <div class="hero-art">
+        <figure class="enter" style="--n:2"><img src="assets/img/refrakt-prisma.webp" width="720" height="1558" alt="REFRAKT: ein Prisma zerlegt weißes Licht in Rot, Grün und Blau" fetchpriority="high"></figure>
+        <figure class="enter" style="--n:4"><img src="assets/img/refrakt-start.webp" width="720" height="1558" alt="REFRAKT: Startbildschirm mit Weiterspielen, Tagesrätsel und Levelauswahl"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="game" id="spiele" aria-labelledby="refrakt-titel">
+    <div class="wrap">
+      <div class="reveal">
+        <div class="game-head">
+          <img src="assets/img/refrakt-icon.webp" width="256" height="256" alt="">
+          <div>
+            <h2 id="refrakt-titel">REFRAKT</h2>
+            <p class="game-sub">Lichtpuzzle für Android</p>
+          </div>
+        </div>
+        <p class="body">Drehe Spiegel, bis jeder Strahl sein Ziel trifft. Ein Prisma zerlegt Weiß in Rot, Grün und Blau, und Farben mischen sich auf ihrem Weg.</p>
+        <dl class="facts">
+          <div><dt>120</dt><dd>Level in sechs Kapiteln</dd></div>
+          <div><dt>Täglich</dt><dd>ein neues Rätsel mit Serie</dd></div>
+          <div><dt>6</dt><dd>Farbwelten</dd></div>
+          <div><dt>Offline</dt><dd>ohne Konto, in sechs Sprachen</dd></div>
+        </dl>
+        <div class="game-actions">
+          <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.refrakt.lightpuzzle" rel="noopener"><span class="ico ico-play" aria-hidden="true"></span> Bei Google Play laden</a>
+          <a class="text-link" href="https://filipstanicak.github.io/refrakt-privacy/"><span class="ico ico-shield" aria-hidden="true"></span> Datenschutz REFRAKT</a>
+        </div>
+      </div>
+      <div class="shots">
+        <figure class="reveal" style="--n:1"><img src="assets/img/refrakt-mischen.webp" width="720" height="1558" loading="lazy" alt="REFRAKT: Magenta und Grün mischen sich am Empfänger zu Weiß"></figure>
+        <figure class="reveal" style="--n:2"><img src="assets/img/refrakt-vapor.webp" width="720" height="1558" loading="lazy" alt="REFRAKT: gelöstes Level aus Kapitel 6 in der Farbwelt Vaporwave"></figure>
+        <figure class="reveal" style="--n:3"><img src="assets/img/refrakt-prisma.webp" width="720" height="1558" loading="lazy" alt="REFRAKT: Prisma mit roten, grünen und blauen Strahlen"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="principles" aria-labelledby="grundsaetze">
+    <div class="wrap">
+      <h2 id="grundsaetze" class="reveal">Wie wir Spiele bauen</h2>
+      <dl>
+        <div class="row reveal"><dt>Offline zuerst</dt><dd>Kein Konto, kein eigener Server. Spielstände bleiben auf deinem Gerät.</dd></div>
+        <div class="row reveal" style="--n:1"><dt>Kein Zeitdruck</dt><dd>Keine Energieleisten und keine Wartezeiten. Gespielt wird im eigenen Tempo.</dd></div>
+        <div class="row reveal" style="--n:2"><dt>Einmal zahlen</dt><dd>Werbung lässt sich mit einem einmaligen Kauf entfernen. Kein Abo, keine Folgekosten.</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="contact" id="kontakt" aria-labelledby="kontakt-titel">
+    <div class="wrap reveal">
+      <h2 id="kontakt-titel">Fragen, Feedback oder einen Fehler gefunden?</h2>
+      <p>Schreib uns eine E-Mail. Rückmeldungen fließen direkt in die nächsten Updates.</p>
+      <a class="btn btn-quiet" href="mailto:slmxinteractive@gmail.com"><span class="ico ico-mail" aria-hidden="true"></span> slmxinteractive@gmail.com</a>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>© 2026 SLMX Interactive</span>
+    <nav aria-label="Rechtliches">
+      <a href="impressum.html">Impressum und Datenschutz</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  // Abschnitte beim Hereinscrollen einblenden. IntersectionObserver statt
+  // Scroll-Listener; ohne Unterstuetzung wird alles sofort gezeigt.
+  (function () {
+    var els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) { els.forEach(function (e) { e.classList.add('shown'); }); return; }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('shown'); io.unobserve(en.target); } });
+    }, { threshold: 0.2 });
+    els.forEach(function (e) { io.observe(e); });
+  })();
+</script>
+</body>
+</html>
