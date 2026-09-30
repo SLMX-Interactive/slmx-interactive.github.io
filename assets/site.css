@@ -62,8 +62,9 @@ a { color: inherit; }
 .nav { position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--bg) 86%, transparent);
   backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
 .nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 68px; }
-.brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; font-weight: 650; letter-spacing: -.01em; }
-.brand svg { width: 30px; height: 30px; }
+.brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; font-size: 18px; font-weight: 400; letter-spacing: -.02em; }
+.brand svg { width: 34px; height: 34px; }
+.brand b { font-weight: 700; }
 .nav ul { display: flex; gap: 28px; list-style: none; margin: 0; padding: 0; }
 .nav a:not(.brand) { text-decoration: none; color: var(--dim); font-size: 15px; font-weight: 500; transition: color .2s; }
 .nav a:not(.brand):hover { color: var(--text); }

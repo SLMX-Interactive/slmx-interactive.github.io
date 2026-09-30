@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+<style>.h{stroke:#0c0f15}@media (prefers-color-scheme:dark){.h{stroke:#eceef3}}</style>
+<path class="h" d="M128 18 L223.26 73 L223.26 183 L128 238 L32.74 183 L32.74 73 Z" fill="none" stroke-width="14" stroke-linejoin="round"/>
+<path d="M32.74 113.53 L132.2 113.53 L223.26 177.96" fill="none" stroke="#4fe2ca" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
