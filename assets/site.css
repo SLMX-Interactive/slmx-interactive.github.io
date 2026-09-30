@@ -90,25 +90,30 @@ a { color: inherit; }
 .hero-art figure:nth-child(1) { left: 6%; top: 40px; transform: rotate(-5deg); }
 .hero-art figure:nth-child(2) { right: 6%; top: 0; transform: rotate(4deg); }
 
-/* ---------- REFRAKT: volle Breite, Text links, Screenshot-Streifen rechts ---------- */
-.game { padding: 104px 0; border-top: 1px solid var(--line); background: var(--surface); }
-.game .wrap { display: grid; grid-template-columns: .9fr 1.1fr; gap: 64px; align-items: center; }
-.game-head { display: flex; align-items: center; gap: 18px; margin-bottom: 24px; }
-.game-head img { width: 72px; height: 72px; border-radius: 18px; box-shadow: var(--shadow); }
-.game h2 { margin: 0; font-size: clamp(32px, 3.6vw, 46px); line-height: 1.05; letter-spacing: -.03em; }
-.game-sub { margin: 4px 0 0; color: var(--dim); font-size: 16px; }
-.game p.body { margin: 0 0 26px; color: var(--dim); max-width: 46ch; }
-.facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 28px; margin: 0 0 34px; padding: 0; }
+/* ---------- Spiele: zwei gleichwertige Spiele nebeneinander ---------- */
+.games { padding: 104px 0; border-top: 1px solid var(--line); background: var(--surface); }
+.games h2 { margin: 0 0 44px; font-size: clamp(30px, 3.4vw, 42px); letter-spacing: -.03em; line-height: 1.08; }
+.games-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.game-card { display: flex; flex-direction: column; padding: 28px; border-radius: var(--r);
+  background: var(--bg); border: 1px solid var(--line); }
+.game-shots { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 28px; }
+.game-shots img { width: 100%; aspect-ratio: 9 / 16; object-fit: cover; object-position: top;
+  border-radius: var(--r); border: 1px solid var(--line); box-shadow: var(--shadow); }
+.game-shots img:nth-child(2) { transform: translateY(22px); }
+.game-head { display: flex; align-items: center; gap: 16px; margin: 12px 0 18px; }
+.game-head img { width: 60px; height: 60px; border-radius: 15px; box-shadow: var(--shadow); }
+.game-card h3 { margin: 0; font-size: 30px; line-height: 1.05; letter-spacing: -.03em; }
+.game-sub { margin: 2px 0 0; color: var(--dim); font-size: 15px; }
+.game-card p.body { margin: 0 0 24px; color: var(--dim); max-width: 46ch; }
+.facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 24px; margin: 0 0 28px; padding: 0; }
 .facts div { border-left: 2px solid var(--accent); padding-left: 14px; }
-.facts dt { font-size: 26px; font-weight: 700; letter-spacing: -.02em; line-height: 1.1; }
+.facts dt { font-size: 24px; font-weight: 700; letter-spacing: -.02em; line-height: 1.1; }
 .facts dd { margin: 2px 0 0; color: var(--dim); font-size: 15px; }
-.game-actions { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+.game-actions { margin-top: auto; display: flex; flex-wrap: wrap; gap: 14px 20px; align-items: center; }
 .text-link { display: inline-flex; align-items: center; gap: 8px; color: var(--dim); font-size: 15px; font-weight: 500; text-decoration: none; }
 .text-link:hover { color: var(--text); }
-.shots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; align-items: start; }
-.shots figure { margin: 0; border-radius: var(--r); overflow: hidden; border: 1px solid var(--line); box-shadow: var(--shadow); }
-.shots figure:nth-child(2) { margin-top: 56px; }
-.shots figure:nth-child(3) { margin-top: 20px; }
+.soon { display: inline-flex; align-items: center; gap: 10px; padding: 14px 24px; border-radius: 999px;
+  border: 1px dashed var(--line); color: var(--dim); font-size: 16px; font-weight: 600; white-space: nowrap; }
 
 /* ---------- Grundsaetze: Begriff links, Erklaerung rechts ---------- */
 .principles { padding: 112px 0; }
@@ -155,12 +160,12 @@ a { color: inherit; }
 /* ---------- Mobil: alles einspaltig ---------- */
 @media (max-width: 860px) {
   .hero { padding: 40px 0 72px; }
-  .hero .wrap, .game .wrap { grid-template-columns: 1fr; gap: 44px; min-height: 0; }
+  .hero .wrap { grid-template-columns: 1fr; gap: 44px; min-height: 0; }
+  .games-grid { grid-template-columns: 1fr; }
+  .game-card { padding: 20px; }
   .hero-art { height: 420px; }
   .hero-art figure { width: 190px; border-radius: 24px; }
-  .game, .principles, .contact { padding: 80px 0; }
-  .shots { grid-template-columns: repeat(3, 72%); overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; }
-  .shots figure { scroll-snap-align: start; margin-top: 0 !important; }
+  .games, .principles, .contact { padding: 80px 0; }
   .principles .row { grid-template-columns: 1fr; gap: 8px; }
   .nav ul { gap: 20px; }
 }
